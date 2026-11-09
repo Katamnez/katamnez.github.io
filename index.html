@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Катамнез у Києві: огляди розвитку передчасно народжених дітей · Перинатальний центр</title>
+<script>document.documentElement.classList.add("js")</script>
 <meta name="description" content="Катамнестичне спостереження в Києві: планові огляди розвитку передчасно народжених дітей і малюків з групи ризику до 4 років. Педіатр, невролог, фізичний терапевт, психолог. Запис у Telegram.">
 <link rel="canonical" href="https://katamnez.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -87,6 +88,17 @@ ul.ck li:before{content:"";position:absolute;left:0;top:9px;width:16px;height:16
 details{background:#fff;border-radius:18px;padding:18px 22px;margin:12px 0;box-shadow:0 4px 16px rgba(23,51,47,.05)}
 summary{font-weight:700;cursor:pointer;color:var(--d)}details p{margin:10px 0 0;color:var(--mute)}
 .contact{background:var(--t);color:var(--w);border-radius:36px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+section{scroll-margin-top:64px}
+.head{max-width:820px;margin-bottom:28px}.head h2{margin:0;text-wrap:balance}
+h2{text-wrap:balance}
+.two{align-items:start}
+.two>div>p:first-child,.two>div>ul:first-child{margin-top:0}
+.intro,#pro .wrap>p{max-width:820px}.note{max-width:820px}
+.round{aspect-ratio:5/4}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .round.rv{transform:translateY(28px) scale(.97)}.js .round.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .round.rv{opacity:1;transform:none;transition:none}}
 .contact h2{color:#fff}.contact p{color:var(--m)}.contact .btn{background:var(--c)}
 .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
 footer{padding:40px 0 60px;color:var(--mute);font-size:14px}
@@ -115,18 +127,18 @@ footer a{color:var(--mute)}
 </section>
 
 <section id="pro"><div class="wrap">
- <div class="kicker">Що таке катамнез</div>
- <h2>Катамнез у Києві: спостереження за розвитком після виписки</h2>
+ <div class="head"><div class="kicker">Що таке катамнез</div><h2>Катамнез у Києві: спостереження за розвитком після виписки</h2></div>
  <p class="intro">Катамнестичне спостереження це регулярні планові огляди дітей, які мали складний старт. Мета проста: вчасно помітити, коли дитині потрібна додаткова підтримка, і почати її без зволікань. Або спокійно переконатися, що все йде добре.</p>
  <div class="note">Більшість дітей, народжених раніше терміну, розвиваються добре. Регулярні огляди допомагають у цьому переконатися, а батькам дають зрозумілий план і людей, до яких можна звернутися з питаннями.</div>
  <p style="margin-top:22px;color:var(--mute)">Ми працюємо за Порядком МОЗ України про катамнестичне спостереження (наказ №1864) і враховуємо британську настанову NICE NG72, яка описує розширену підтримку розвитку дітей, народжених раніше терміну.</p>
 </div></section>
 
-<section class="mint"><div class="wrap two">
+<section class="mint"><div class="wrap">
+ <div class="head"><div class="kicker">Кого ми спостерігаємо</div>
+  <h2>Діти з групи ризику до 4 років, зокрема після реанімації (ВІТН)</h2></div>
+ <div class="two">
  <div class="round"><img src="img/baby.jpg" alt="Усміхнене немовля лежить на спині" loading="lazy" width="900" height="900"></div>
  <div>
-  <div class="kicker">Кого ми спостерігаємо</div>
-  <h2>Діти з групи ризику до 4 років, зокрема після реанімації (ВІТН)</h2>
   <ul class="ck">
    <li>народжені на 22–37 тижні або з масою 500–2500 г</li>
    <li>малюки, які мали судоми, внутрішньочерепний крововилив, енцефалопатію чи лікувальну гіпотермію</li>
@@ -136,11 +148,10 @@ footer a{color:var(--mute)}
   </ul>
   <p>Про те, що дитина належить до групи ризику, батькам повідомляє лікар-неонатолог ще до виписки. Приймаємо дітей, народжених у Перинатальному центрі та в інших пологових будинках.</p>
  </div>
-</div></section>
+</div></div></section>
 
 <section id="ohliad"><div class="wrap">
- <div class="kicker">Мультидисциплінарна команда</div>
- <h2>Педіатр, невролог, фізичний терапевт і психолог на одному огляді</h2>
+ <div class="head"><div class="kicker">Мультидисциплінарна команда</div><h2>Педіатр, невролог, фізичний терапевт і психолог на одному огляді</h2></div>
  <p class="intro">Як і в британській програмі спостереження, дитину оглядає команда: лікар і фахівці з розвитку дивляться на неї разом, а не окремо.</p>
  <div class="cards">
   <div class="card"><div class="ic">🩺</div><h3>Лікар-педіатр</h3><p>Ріст, харчування, щеплення, загальний стан здоров'я.</p></div>
@@ -150,10 +161,11 @@ footer a{color:var(--mute)}
  </div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap two">
+<section style="padding-top:0"><div class="wrap">
+ <div class="head"><div class="kicker">Як проходить огляд</div>
+  <h2>Оцінка розвитку немовляти і дитини до 4 років</h2></div>
+ <div class="two">
  <div>
-  <div class="kicker">Як проходить огляд</div>
-  <h2>Оцінка розвитку немовляти і дитини до 4 років</h2>
   <ul class="ck">
    <li>рух: крупну і дрібну моторику</li>
    <li>когнітивний розвиток</li>
@@ -166,11 +178,10 @@ footer a{color:var(--mute)}
   <p><b>Після огляду</b> ви отримуєте висновок, план спостереження і рекомендації для дому. За потреби підкажемо подальший маршрут: до інших фахівців, на реабілітацію чи в раннє втручання.</p>
  </div>
  <div class="round"><img src="img/exam.jpg" alt="Руки фахівця працюють з ручкою дитини" loading="lazy" width="900" height="900"></div>
-</div></section>
+</div></div></section>
 
 <section id="hrafik" class="mint"><div class="wrap">
- <div class="kicker">Графік оглядів</div>
- <h2>Ключові вікові періоди</h2>
+ <div class="head"><div class="kicker">Графік оглядів</div><h2>Ключові вікові періоди</h2></div>
  <p class="intro">За Порядком МОЗ планові огляди проводять у такі місяці, а за потреби частіше:</p>
  <div class="months"><span>1<small>міс</small></span><span>3<small>міс</small></span><span>6<small>міс</small></span><span>9<small>міс</small></span><span>12<small>міс</small></span><span>18<small>міс</small></span><span>24<small>міс</small></span><span>36<small>міс</small></span><span>48<small>міс</small></span></div>
  <div class="calc">
@@ -181,20 +192,20 @@ footer a{color:var(--mute)}
  </div>
 </div></section>
 
-<section><div class="wrap two">
+<section><div class="wrap">
+ <div class="head"><div class="kicker">Для батьків</div>
+  <h2>Ви не одні</h2></div>
+ <div class="two">
  <div>
-  <div class="kicker">Для батьків</div>
-  <h2>Ви не одні</h2>
   <p>Після відділення інтенсивної терапії багатьом батькам тривожно навіть тоді, коли малюк уже вдома. Це часто буває, і з цим можна впоратися. Британська настанова прямо радить пропонувати батькам емоційну підтримку і можливість поспілкуватися з іншими родинами.</p>
   <p>На огляді можна поговорити з психологом центру. А якщо між оглядами вас щось турбує в розвитку дитини, <b>не чекайте наступного візиту</b>: напишіть нам.</p>
   <div class="links"><a class="btn alt" href="https://t.me/katamnez_kyiv">Корисне для батьків у Telegram</a></div>
  </div>
  <div class="round"><img src="img/hands.jpg" alt="Долоня малюка на долонях дорослого" loading="lazy" width="900" height="900"></div>
-</div></section>
+</div></div></section>
 
 <section id="zapys" class="mint"><div class="wrap">
- <div class="kicker">Запис на огляд</div>
- <h2>Як записатися на катамнестичний огляд у Києві</h2>
+ <div class="head"><div class="kicker">Запис на огляд</div><h2>Як записатися на катамнестичний огляд у Києві</h2></div>
  <div class="steps">
   <div class="card"><h3>Напишіть або зателефонуйте</h3><p>Telegram <a href="https://t.me/katamnez_perynatal_kyiv">@katamnez_perynatal_kyiv</a> або <a href="tel:+380682786199">+380 68 278 61 99</a>.</p></div>
   <div class="card"><h3>Повідомте дані</h3><p>ПІБ дитини, дату народження, пологовий будинок, де народилася дитина, і ПІБ матері.</p></div>
@@ -204,8 +215,7 @@ footer a{color:var(--mute)}
 </div></section>
 
 <section><div class="wrap">
- <div class="kicker">Часті питання</div>
- <h2>Відповіді для батьків</h2>
+ <div class="head"><div class="kicker">Часті питання</div><h2>Відповіді для батьків</h2></div>
  <details><summary>До якого віку триває спостереження?</summary><p>До 4 років. Ключові огляди: 1, 3, 6, 9, 12, 18, 24, 36 і 48 місяців, а за потреби частіше.</p></details>
  <details><summary>Чи приймаєте дітей, народжених в інших пологових?</summary><p>Так. Приймаємо дітей з групи ризику, народжених у Перинатальному центрі та в інших пологових будинках.</p></details>
  <details><summary>Що потрібно для огляду?</summary><p>Укладена декларація з педіатром або сімейним лікарем. Запис заздалегідь у Telegram або телефоном.</p></details>
@@ -231,5 +241,21 @@ footer a{color:var(--mute)}
  <p>Центр катамнестичного спостереження · Перинатальний центр міста Києва · <a href="https://www.perinatalcenter.com.ua/">perinatalcenter.com.ua</a></p>
  <p>Ми спираємося на <a href="https://zakon.rada.gov.ua/laws/show/z0128-26">Порядок надання медичної допомоги з катамнестичного спостереження (наказ МОЗ №1864)</a> і <a href="https://www.nice.org.uk/guidance/ng72">NICE NG72: Developmental follow-up of children and young people born preterm</a>. Інформація на сайті не замінює консультації лікаря. Фото: Pexels.</p>
 </div></footer>
+<script>
+(function(){
+ var sel='.hero .wrap>div:first-child>*, .hero .ph, .head, .intro, .note, #pro .wrap>p, .two>*, .cards .card, .months span, .calc, .steps .card, details, .contact, .links';
+ var els=[].slice.call(document.querySelectorAll(sel));
+ els.forEach(function(e){
+  if(e.closest('.rv'))return;
+  e.classList.add('rv');
+  var sib=e.parentElement?[].slice.call(e.parentElement.children).filter(function(x){return x.matches(sel)}):[];
+  var k=Math.max(0,sib.indexOf(e));
+  e.style.transitionDelay=Math.min(k*90,540)+'ms';
+ });
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+ document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
