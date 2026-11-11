@@ -49,7 +49,7 @@ header.top{position:sticky;top:0;z-index:10;background:rgba(255,246,236,.92);bac
 .top .wrap{display:flex;align-items:center;gap:14px;height:64px}
 .top .lg{width:42px;height:42px;border-radius:50%;overflow:hidden;flex:none}
 .top .nm{font-weight:700;line-height:1.15;font-size:15px}.top .nm small{display:block;font-weight:500;color:var(--mute);font-size:12px}
-.top nav{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:15px;line-height:1}.top nav a{text-decoration:none;color:var(--d);font-weight:500}
+.top nav{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:15px;line-height:1;white-space:nowrap}.top nav a{text-decoration:none;color:var(--d);font-weight:500}
 .top nav a.btn{color:#fff}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--t);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px;border:0}
 .btn.alt{background:#fff;color:var(--t);box-shadow:inset 0 0 0 2px var(--t)}
@@ -112,7 +112,7 @@ footer a{color:var(--mute)}
 <header class="top"><div class="wrap">
  <div class="lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" aria-hidden="true"><rect width="512" height="512" fill="#1F7A74"/><g transform="translate(0,-18)"><circle cx="132" cy="290" r="30" fill="#FFF6EC"/><circle cx="380" cy="290" r="30" fill="#FFF6EC"/><circle cx="256" cy="290" r="135" fill="#FFF6EC"/><path d="M256 158 C230 120 262 92 286 108 C304 120 292 146 272 140" fill="none" stroke="#F08A5D" stroke-width="18" stroke-linecap="round"/><path d="M196 280 Q212 296 228 280 M284 280 Q300 296 316 280" fill="none" stroke="#1F7A74" stroke-width="12" stroke-linecap="round"/><circle cx="190" cy="322" r="16" fill="#F08A5D" opacity=".55"/><circle cx="322" cy="322" r="16" fill="#F08A5D" opacity=".55"/><path d="M234 336 Q256 356 278 336" fill="none" stroke="#1F7A74" stroke-width="12" stroke-linecap="round"/></g></svg></div>
  <div class="nm">Центр катамнестичного спостереження<small>Перинатальний центр міста Києва</small></div>
- <nav><a href="#pro">Про нас</a><a href="#ohliad">Огляд</a><a href="#hrafik">Графік</a><a href="#zapys">Запис</a><a class="btn sm" href="https://t.me/katamnez_perynatal_kyiv">Записатися</a></nav>
+ <nav><a href="#komu">Для кого</a><a href="#komanda">Команда</a><a href="#hrafik">Графік</a><a href="#pytannia">Питання</a><a href="#kontakty">Контакти</a><a class="btn sm" href="https://t.me/katamnez_perynatal_kyiv">Записатися</a></nav>
 </div></header>
 
 <section class="hero"><div class="wrap">
@@ -134,7 +134,7 @@ footer a{color:var(--mute)}
  <p style="margin-top:22px;color:var(--mute)">Ми працюємо за Порядком МОЗ України про катамнестичне спостереження (наказ №1864) і враховуємо британську настанову NICE NG72, яка описує розширену підтримку розвитку дітей, народжених раніше терміну.</p>
 </div></section>
 
-<section class="mint"><div class="wrap">
+<section id="komu" class="mint"><div class="wrap">
  <div class="head"><div class="kicker">Кого ми спостерігаємо</div>
   <h2>Діти з групи ризику до 4 років, зокрема після реанімації (ВІТН)</h2></div>
  <div class="two">
@@ -151,18 +151,18 @@ footer a{color:var(--mute)}
  </div>
 </div></div></section>
 
-<section id="ohliad"><div class="wrap">
+<section id="komanda"><div class="wrap">
  <div class="head"><div class="kicker">Мультидисциплінарна команда</div><h2>Педіатр, невролог, фізичний терапевт і психолог на одному огляді</h2></div>
  <p class="intro">Як і в британській програмі спостереження, дитину оглядає команда: лікар і фахівці з розвитку дивляться на неї разом, а не окремо.</p>
  <div class="cards">
-  <div class="card team"><img src="img/team-pediatr.jpg?v=2" alt="Богдана Гончарук, лікар-педіатр" loading="lazy" width="520" height="520"><h3>Лікар-педіатр</h3><div class="nm">Богдана Гончарук</div><p>Ріст, харчування, щеплення, загальний стан здоров'я.</p></div>
-  <div class="card team"><img src="img/team-neuro.jpg?v=2" alt="Катерина Чернишова, лікар-невролог" loading="lazy" width="520" height="520"><h3>Лікар-невролог</h3><div class="nm">Катерина Чернишова</div><p>Неврологічний стан і розвиток нервової системи.</p></div>
-  <div class="card team"><img src="img/team-pt.jpg?v=2" alt="Ігор Петровський, фізичний терапевт" loading="lazy" width="520" height="520"><h3>Фізичний терапевт</h3><div class="nm">Ігор Петровський</div><p>Рух і моторні навички, поради для щоденного догляду та гри.</p></div>
-  <div class="card team"><img src="img/team-psych.jpg?v=2" alt="Тетяна Першина, психолог" loading="lazy" width="520" height="520"><h3>Психолог</h3><div class="nm">Тетяна Першина</div><p>Соціально-емоційний розвиток дитини та підтримка батьків.</p></div>
+  <div class="card team"><img src="img/team-pediatr.jpg?v=3" alt="Богдана Гончарук, лікар-педіатр" loading="lazy" width="520" height="520"><h3>Лікар-педіатр</h3><div class="nm">Богдана Гончарук</div><p>Ріст, харчування, щеплення, загальний стан здоров'я.</p></div>
+  <div class="card team"><img src="img/team-neuro.jpg?v=3" alt="Катерина Чернишова, лікар-невролог" loading="lazy" width="520" height="520"><h3>Лікар-невролог</h3><div class="nm">Катерина Чернишова</div><p>Неврологічний стан і розвиток нервової системи.</p></div>
+  <div class="card team"><img src="img/team-pt.jpg?v=3" alt="Ігор Петровський, фізичний терапевт" loading="lazy" width="520" height="520"><h3>Фізичний терапевт</h3><div class="nm">Ігор Петровський</div><p>Рух і моторні навички, поради для щоденного догляду та гри.</p></div>
+  <div class="card team"><img src="img/team-psych.jpg?v=3" alt="Тетяна Першина, психолог" loading="lazy" width="520" height="520"><h3>Психолог</h3><div class="nm">Тетяна Першина</div><p>Соціально-емоційний розвиток дитини та підтримка батьків.</p></div>
  </div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section id="ohliad" style="padding-top:0"><div class="wrap">
  <div class="head"><div class="kicker">Як проходить огляд</div>
   <h2>Оцінка розвитку немовляти і дитини до 4 років</h2></div>
  <div class="two">
@@ -214,7 +214,7 @@ footer a{color:var(--mute)}
  </div>
 </div></section>
 
-<section><div class="wrap">
+<section id="pytannia"><div class="wrap">
  <div class="head"><div class="kicker">Часті питання</div><h2>Відповіді для батьків</h2></div>
  <details><summary>До якого віку триває спостереження?</summary><p>До 4 років. Ключові огляди: 1, 3, 6, 9, 12, 18, 24, 36 і 48 місяців, а за потреби частіше.</p></details>
  <details><summary>Чи приймаєте дітей, народжених в інших пологових?</summary><p>Так. Приймаємо дітей з групи ризику, народжених у Перинатальному центрі та в інших пологових будинках.</p></details>
@@ -223,7 +223,7 @@ footer a{color:var(--mute)}
  <details><summary>Що робити, якщо щось турбує між оглядами?</summary><p>Не чекайте планового візиту. Напишіть нам у Telegram або зателефонуйте, і ми підкажемо, що робити далі.</p></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section id="kontakty" style="padding-top:0"><div class="wrap">
  <div class="contact">
   <div>
    <h2>Де нас знайти</h2>
