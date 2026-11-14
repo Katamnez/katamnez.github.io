@@ -106,6 +106,21 @@ footer a{color:var(--mute)}
 @media (max-width:1100px){.top nav a[href$="#pytannia"]{display:none}}
 @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.ac.big{grid-column:span 2}}
 @media (max-width:600px){.grid,.rel{grid-template-columns:1fr}.ac.big{grid-column:auto;flex-direction:column}.ac.big img{width:100%;aspect-ratio:16/10;min-height:0}.bh h1,.art h1{font-size:30px}.art p,.art li{font-size:17px}.lead{font-size:18px}}
+/*MENU*/
+.top .mb{display:none}
+@media (min-width:1101px){.top nav a[href$="#pytannia"]{display:none}}
+@media (max-width:1100px){
+.top nav a:not(.btn){display:none}
+.top.mjs .mb{display:inline-flex;align-items:center;gap:8px;margin-left:auto;flex:none;height:44px;padding:0 16px;border:0;border-radius:999px;background:#fff;color:var(--t);box-shadow:inset 0 0 0 2px var(--t);font:600 15px/1 Inter,system-ui,sans-serif;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.top .mb svg{width:18px;height:18px;flex:none}.top .mb .x,.top.open .mb .h{display:none}.top.open .mb .x{display:block}
+.top.mjs nav{display:none;position:absolute;left:0;right:0;top:100%;margin:0;flex-direction:column;align-items:stretch;gap:0;padding:6px 20px 22px;background:var(--w);border-top:1px solid rgba(31,122,116,.12);box-shadow:0 22px 30px rgba(23,51,47,.14);white-space:normal;font-size:17px;line-height:1.3;max-height:calc(100vh - 64px);overflow-y:auto}
+.top.mjs.open nav{display:flex}
+.top.mjs nav a:not(.btn),.top.mjs nav a[href$="#pytannia"]{display:block;padding:15px 2px;border-bottom:1px solid rgba(31,122,116,.14);font-weight:600}
+.top.mjs nav a.btn{justify-content:center;margin-top:18px;padding:16px 22px;font-size:17px}
+}
+@media (max-width:430px){.top .wrap,.top .brand{gap:10px}.top .lg{width:38px;height:38px}.top.mjs .mb{padding:0 13px;gap:6px}.top .nm{font-size:12.5px}.top .nm small{font-size:11px}}
+@media (max-width:350px){.top .nm small{display:none}}
+/*/MENU*/
 </style>
 <style>
 .bh{padding:56px 0 24px}.bh h1{font-size:44px;line-height:1.1;color:var(--t);margin:10px 0 12px;letter-spacing:-.5px}.bh p{max-width:720px;color:var(--mute);font-size:18px;margin:0}
@@ -136,8 +151,9 @@ footer a{color:var(--mute)}
  <div class="lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" aria-hidden="true"><rect width="512" height="512" fill="#1F7A74"/><g transform="translate(0,-18)"><circle cx="132" cy="290" r="30" fill="#FFF6EC"/><circle cx="380" cy="290" r="30" fill="#FFF6EC"/><circle cx="256" cy="290" r="135" fill="#FFF6EC"/><path d="M256 158 C230 120 262 92 286 108 C304 120 292 146 272 140" fill="none" stroke="#F08A5D" stroke-width="18" stroke-linecap="round"/><path d="M196 280 Q212 296 228 280 M284 280 Q300 296 316 280" fill="none" stroke="#1F7A74" stroke-width="12" stroke-linecap="round"/><circle cx="190" cy="322" r="16" fill="#F08A5D" opacity=".55"/><circle cx="322" cy="322" r="16" fill="#F08A5D" opacity=".55"/><path d="M234 336 Q256 356 278 336" fill="none" stroke="#1F7A74" stroke-width="12" stroke-linecap="round"/></g></svg></div>
  <div class="nm">Центр катамнестичного спостереження<small>Перинатальний центр міста Києва</small></div>
  </a>
- <nav><a href="/#komu">Для кого</a><a href="/#komanda">Команда</a><a href="/#hrafik">Графік</a><a href="/blog/">Для батьків</a><a href="/#pytannia">Питання</a><a href="/#kontakty">Контакти</a><a class="btn sm" href="https://t.me/katamnez_perynatal_kyiv">Записатися</a></nav>
+ <button class="mb" type="button" aria-expanded="false" aria-controls="menu" aria-label="Відкрити меню"><svg class="h" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Меню</span></button><nav id="menu" aria-label="Головне меню"><a href="/#komu">Для кого</a><a href="/#komanda">Команда</a><a href="/#hrafik">Графік</a><a href="/kalkulyator-skorygovanoho-viku.html">Калькулятор</a><a href="/blog/">Для батьків</a><a href="/#pytannia">Питання</a><a href="/#kontakty">Контакти</a><a class="btn sm" href="https://t.me/katamnez_perynatal_kyiv">Записатися</a></nav>
 </div></header>
+<script>/*menu*/(function(){var h=document.querySelector(".top"),b=h&&h.querySelector(".mb"),n=h&&h.querySelector("nav");if(!b||!n)return;h.classList.add("mjs");function set(o){h.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Закрити меню":"Відкрити меню")}b.addEventListener("click",function(){set(!h.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&h.classList.contains("open")){set(false);b.focus()}});document.addEventListener("click",function(e){if(!h.contains(e.target))set(false)});window.addEventListener("resize",function(){if(window.innerWidth>1100)set(false)})})();</script>
 <main><div class="wrap"><article class="art">
 <div class="crumb"><a href="/">Головна</a> › <a href="/blog/">Для батьків</a> › Супровід</div>
 <h1>Як малюк чує: що можна помітити вдома</h1>
